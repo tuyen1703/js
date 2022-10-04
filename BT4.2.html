@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+    <title>Admin</title>
+    <link href="css/styles-admin.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style-1.css">
+  <script src="CSS/style.css"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous"src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v7.0"></script>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+    </head>
+    <body class="sb-nav-fixed">
+        <header class="fixed-top">
+            <div style="margin-top:-10px;" class="menu1">
+                <div class="row">
+                  <div class="col-md-7">
+                    <ul class="nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Kênh Người Bán</a>
+                      </li>
+                      <div class="vl"></div>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Trở thành Người bán Shopee</a>
+                      </li>
+                      <div class="vl"></div>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Tải ứng dụng</a>
+                      </li>
+                      <div class="vl"></div>
+                      <li class="nav-item">
+                        <a class="nav-link disabled text-light">Kết nối</a>
+                      </li>
+                      <li><a class="bi bi-facebook icons" href="https://www.facebook.com/"></a></li>
+                      <li><a class="bi bi-instagram icons" href="https://www.instagram.com/"></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-5">
+                    <ul class="nav">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-bell"></i> Thông Báo</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#"><i class="bi bi-question-circle"></i> Hỗ Trợ</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><i class="bi bi-globe"></i> Tiếng Việt</a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-dark" href="#">Tiếng Việt</a></li>
+                            <li><a class="dropdown-item text-dark" href="#">English</a></li>
+                          </ul>
+                          </li>
+                          <li class="nav-item">
+                            <a style="margin-top: -35px; margin-left: 300px;" class="nav-link" href="blog.html"><img style="width: 12%;" class="rounded-circle" src="images/avatar.jpg"></a>
+                          </li>
+                          <li class="nav-item">
+                            <a style="margin-left:325px; margin-top: -38px;" href="blog.html" class="nav-link">tuyen1733</a>
+                          </li>
+                    </ul>
+                </div>
+            </div>
+            <div style="background-color: #fff;" class="menu2">
+              <div style="height: 90px;" class="row">
+                  <div class="col-md-2">
+                      <a href="index.html"><img src="images/logo-s.png"></a>
+                  </div>
+                  <div class="col-1">
+                      <div style="height: 30px; margin-top: 28px; border-left: 1px solid #ee4d2d92;" class="vl"></div>
+                  </div>
+                  <div style="margin-left: -80px;" class="col">
+                      <h4 style="color:#ee4d2d; margin-top: 34px;font-family: Helvetica Neue,Helvetica,Arial,文泉驛正黑,WenQuanYi Zen Hei,Hiragino Sans GB,儷黑 Pro,LiHei Pro,Heiti TC,微軟正黑體,Microsoft JhengHei UI,Microsoft JhengHei,sans-serif;" class="text-start">Quản Lý</h4>
+                  </div>   
+              </div>
+          </div>
+          </div>
+          <hr style="margin-top: -18px; color:#7b7a7a7b;">
+        </header>
+        <nav style="padding-top:130px;" class="container-fluid">
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button style="margin-right: 30px;" class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Dashboard</button>
+            <button style="margin-right: 30px;" class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Admin</button>
+            <button style="margin-right: 30px;" class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">User</button>
+            <button class="nav-link" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false" disabled>Disabled</button>
+          </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active container-fluid" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+            <div style="margin-top: 15px;" class="row">
+              <div class="col">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row align-items-center gx-0">
+                      <div class="col">
+    
+                        <!-- Title -->
+                        <h6 class="text-uppercase text-muted mb-2">
+                          Value
+                        </h6>
+    
+                        <!-- Heading -->
+                        <span class="h2 mb-0">
+                          $24,500
+                        </span>
+    
+                        <!-- Badge -->
+                        <span class="badge bg-success-soft mt-n1">
+                          +3.5%
+                        </span>
+                      </div>
+                      <div class="col-auto">
+                        <span class="h2 fe fe-dollar-sign text-muted mb-0"><i class="bi bi-currency-dollar"></i></span>
+    
+                      </div>
+                    </div> 
+                    <!-- / .row -->
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row align-items-center gx-0">
+                      <div class="col">
+    
+                        <!-- Title -->
+                        <h6 class="text-uppercase text-muted mb-2">
+                          TOTAL HOURS
+                        </h6>
+    
+                        <!-- Heading -->
+                        <span class="h2 mb-0">
+                          763.5
+                        </span>
+                        
+                      </div>
+                      <div class="col-auto">
+                        <span class="h2 fe fe-dollar-sign text-muted mb-0"><i class="bi bi-basket"></i></span>
+    
+                      </div>
+                    </div> 
+                    <!-- / .row -->
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row align-items-center gx-0">
+                      <div class="col">
+    
+                        <!-- Title -->
+                        <h6 class="text-uppercase text-muted mb-2">
+                          EXIT %
+                        </h6>
+    
+                        <!-- Heading -->
+                        <span class="h2 mb-0">
+                          35.5%
+                        </span>
+                  
+                      </div>
+                      <div class="col-auto">
+                        <span class="h2 fe fe-dollar-sign text-muted mb-0"><i class="bi bi-graph-up"></i></span>
+    
+                      </div>
+                    </div> 
+                    <!-- / .row -->
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row align-items-center gx-0">
+                      <div class="col">
+    
+                        <!-- Title -->
+                        <h6 class="text-uppercase text-muted mb-2">
+                          AVG. TIME
+                        </h6>
+    
+                        <!-- Heading -->
+                        <span class="h2 mb-0">
+                          2:37
+                        </span>
+  
+                      </div>
+                      <div class="col-auto">
+                        <span class="h2 fe fe-dollar-sign text-muted mb-0"><i class="bi bi-clock"></i></span>
+    
+                      </div>
+                    </div> 
+                    <!-- / .row -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-xl-7">
+
+                <!-- Convertions -->
+                <div class="card">
+                  <div class="card-header">
+    
+                    <!-- Title -->
+                    <h4 class="card-header-title">
+                      Conversions
+                    </h4>
+    
+                    <!-- Caption -->
+                    <span class="text-muted me-3">
+                      Last year comparision:
+                    </span>
+    
+                    <!-- Switch -->
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="cardToggle" data-toggle="chart" data-target="#conversionsChart" data-trigger="change" data-action="add" data-dataset="1">
+                      <label class="form-check-label" for="cardToggle"></label>
+                    </div>
+    
+                  </div>
+                  <div class="card-body">
+    
+                    <!-- Chart -->
+                    <canvas id="myChart1" style="width:100%; max-height:222px; max-width:650px;"></canvas>
+    
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-xl-5">
+
+                <!-- Traffic -->
+                <div class="card">
+                  <div class="card-header">
+    
+                    <!-- Title -->
+                    <h4 class="card-header-title">
+                      Traffic Channels
+                    </h4>
+    
+                    <!-- Tabs -->
+                    <ul class="nav nav-tabs nav-tabs-sm card-header-tabs">
+                      <li class="nav-item" data-toggle="chart" data-target="#trafficChart" data-trigger="click" data-action="toggle" data-dataset="0">
+                        <a href="#" class="nav-link active" data-bs-toggle="tab">
+                          All
+                        </a>
+                      </li>
+                      <li class="nav-item" data-toggle="chart" data-target="#trafficChart" data-trigger="click" data-action="toggle" data-dataset="1">
+                        <a href="#" class="nav-link" data-bs-toggle="tab">
+                          Direct
+                        </a>
+                      </li>
+                    </ul>
+    
+                  </div>
+                  <div class="card-body">
+    
+                    <!-- Chart -->
+                    <canvas id="myChart2" style="width:100%;max-width:600px"></canvas>
+    
+                    
+    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0"><div id="layoutSidenav_content" style="padding-left:100px ;padding-right:100px">
+            <div class="product">
+                <div class="title" style="padding-bottom:0px;padding-top:10px; color:#ee4d2d;"><h3>Quản lý sản phẩm</h3></div>
+                <button style="background-color: #ee4d2d; color:#fff;" class="btn" data-toggle="modal" data-target="#exampleModal">
+                    <i class="fas fa-plus mr-2"></i>Create
+                </button>
+                <table class="table">
+                    <thead class="thead-light text-center">
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Img</th>
+                            <th>Price</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-center" id="product-admin">
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Thêm sản phẩm</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" class="form-row">
+                            <div class="col-12 mt-3">
+                                <input type="text" id="iName" class="form-control" placeholder="name">
+                            </div>
+                            <div class="col-12 mt-3">
+                                <input type="text" id="iImg" class="form-control" placeholder="img">
+                            </div>
+                            <div class="col-12 mt-3">
+                                <input type="number" id="iPrice" class="form-control" placeholder="giá">
+                            </div>
+                            <a class="btn btn-outline-danger mt-3" onclick="addProduct()">Thêm</a>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Exit</button>
+                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="updateProduct" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Cập nhật</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" class="form-row">
+                            <div class="col-12">
+                                <input type="text" name="" id="idd" class="form-control" placeholder="id">
+                            </div>
+                            <div class="col-12 mt-3">
+                                <input type="text" name="" id="named" class="form-control" placeholder="name">
+                            </div>
+                            <div class="col-12 mt-3">
+                                <input type="text" name="" id="imgd" class="form-control" placeholder="img">
+                            </div>
+                            <div class="col-12 mt-3">
+                                <input type="text" name="" id="priced" class="form-control" placeholder="giá">
+                            </div>
+                            <div  id="submitUpdate">Cập nhật</div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+          <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">...</div>
+          <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">...</div>
+        </div>
+        
+        <footer >
+            <div style="margin:20px;margin-left: 10px; margin-right:10px; background-color: #b19c9c1e; border-top: 2px solid #ee4d2d;" class="second">
+            <div class="row">
+              <div class="col">
+                <a class="text-muted" href="#"><strong>CHĂM SÓC KHÁCH HÀNG</strong></a><br>
+                  <a href="#">Trung Tâm Trợ Giúp</a><br>
+                  <a href="#">Shopee Blog</a><br>
+                  <a href="#">Shopee Mall </a><br>
+                  <a href="#">Hướng Dẫn Mua Hàng </a><br>
+                  <a href="#">Hướng Dẫn Bán Hàng</a><br>
+                  <a href="#">Thanh Toán</a><br>
+                  <a href="#">Shopee Xu</a><br>
+                  <a href="#">Vận Chuyển</a><br>
+                  <a href="#">Trả Hàng & Hoàn Tiền</a><br>
+                  <a href="#">Chăm Sóc Khách Hàng</a><br>
+                  <a href="#">Chính Sách bảo Hành </a>
+              </div>
+              <div class="col">
+                <a class="text-muted" href="#"><strong>VỀ SHOPEE</strong></a><br>
+                <a href="#">Giới Thiệu Về Shopee Việt Nam</a><br>
+                <a href="#">Tuyển Dụng</a><br>
+                <a href="#">Điều Khoản Shopee</a><br>
+                <a href="#">Chính Sách Bảo Mật</a><br>
+                <a href="#">Chính Hãng</a><br>
+                <a href="#">Kênh Người Bán</a><br>
+                <a href="#">Flash Sales</a><br>
+                <a href="#">Chương Trình Tiếp Thị Liên Kết Shopee</a><br>
+                <a href="#">Liên Hệ Với Truyền Thông</a><br>
+            </div>
+              <div class="col">
+                <a class="text-muted" href="#"><strong>THANH TOÁN</strong></a><br>
+                  <img style="width:80%; height: 100px;margin-left: -5px;" src="images\footer2.png">
+                <br><a class="text-muted" href="#"><strong>ĐƠN VỊ VẬN CHUYỂN</strong></a><br>
+                <img style="width:95%; height: 160px;margin-left: -10px;" src="images\footer1.png">
+              </div>
+              <div class="col">
+                <a class="text-muted" href="#"><strong>THEO DÕI CHÚNG TÔI TRÊN</strong></a><br>
+                <a href="#"><i class="bi bi-facebook"></i> Facebook</a><br>
+                <a href="#"><i class="bi bi-instagram"></i> Instagram</a><br>
+                <a href="#"><i class="bi bi-linkedin"></i> Linkedln</a><br>
+              </div>
+              <div class="col">
+                <a class="text-muted" href="#"><strong>TẢI ỨNG DỤNG SHOPEE NGAY THÔI</strong></a><br>
+                <div class="row">
+                  <div class="col-1">
+                    <img class="text-start" src="images/QR.png" width="80px" height="80px">
+                  </div>
+                  <div class="col text-end">
+                    <a href="#"><i class="bi bi-apple"></i> AppStore</a><br>
+                    <a href="#"><i class="bi bi-google"></i> GooglePlay</a><br>
+                    <a href="#"><i class="bi bi-app"></i> AppGallery</a><br>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="background-color:white;" class="third">
+            <hr style="width: 100%; height:2px; margin-top: 10px; margin-left: 2px; color:#bcb7b6a2;">
+            <div class="row">
+              <div class="col-md-4">
+                <p>© 2022 Shopee. Tất cả các quyền được bảo lưu.
+                </p>
+              </div>
+              <div class="col-md-8 text-center">
+                <p>Quốc gia & Khu vực:
+                <a href="#">Singapo </a>| 
+                <a href="#">Indonesia </a>|
+                <a href="#">Đài Loan </a>|
+                <a href="#">Thái Lan </a>|
+                <a href="#">Malaysia </a>|
+                <a href="#">Việt Nam </a>|
+                <a href="#">Philippines </a>|
+                <a href="#">Brazil </a>|
+                <a href="#">México </a>|
+                <a href="#">Colombia </a>|
+                <a href="#">Chile </a>|<br>
+                <a href="#">Poland </a>|
+                <a href="#">Spain </a>|
+                <a href="#">Argentina </a>|
+              </p>
+              </div>
+            </div>
+          </div>
+          <div style="background-color: white;" class="four">
+            <div class="header">
+            <ul class="nav justify-content-center">
+              <li class="nav-item text-muted">
+                <a class="nav-link active text-muted" aria-current="page" href="#">CHÍNH SÁCH BẢO MẬT</a>
+              </li>
+              <div class="vl"></div>
+              <li class="nav-item">
+                <a class="nav-link text-muted" href="#">QUY CHẾ HOẠT ĐỘNG</a>
+              </li>
+              <div class="vl"></div>
+              <li class="nav-item">
+                <a class="nav-link text-muted" href="#">CHÍNH SÁCH VẬN CHUYỂN</a>
+              </li>
+              <div class="vl"></div>
+              <li class="nav-item">
+                <a class="nav-link text-muted" href="#">CHÍNH SÁCH TRẢ HÀNG VÀ HOÀN TIỀN</a>
+              </li>
+            </ul>
+          </div>
+          <div class="logo">
+            <!-- <a href="#"><img class="img-1" src="images/logoCCDV.png" width="110px" height="50px" alt=""></a>
+            <a href="#"><img class="img-1" src="images/logoCCDV.png" width="110px" height="50px" alt=""></a>
+            <a href="#"><img src="images/logoCCDV.png" width="110px" height="50px" alt=""></a> -->
+          </div>
+          <p class="text-center">Công ty TNHH Shopee</p>
+          <div class="copy-right">
+            <p class="text-center">Địa chỉ: Tầng 4-5-6, Tòa nhà Capital Place, số 29 đường Liễu Giai, Phường Ngọc Khánh, Quận Ba Đình, Thành phố Hà Nội, Việt Nam. Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.shopee.vn<br>
+              Chịu Trách Nhiệm Quản Lý Nội Dung: Nguyễn Đức Trí - Điện thoại liên hệ: 024 73081221 (ext 4678)
+              <br>Mã số doanh nghiệp: 0106773786 do Sở Kế hoạch & Đầu tư TP Hà Nội cấp lần đầu ngày 10/02/2015
+              <br>© 2015 - Bản quyền thuộc về Công ty TNHH Shopee</p>
+          </div>
+          </footer>
+        <!--Button trigger modal-->
+
+    </body>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="JS/scripts.js"></script>
+    <script src="./JS/bt4.2qldonhang.js"></script>
+
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
+    <!-- <script src="assets/demo/datatables-demo.js"></script> -->
+<style>
+element.style {
+    display: block;
+    box-sizing: border-box;
+    height: 300px;
+    width: 569.333px;
+    visibility: hidden;
+    left: 277.218px;
+    top: 187.75px;
+    transform: translateX(-50%) translateY(-100%) translateY(-1rem);
+}
+#chart-tooltip {
+    z-index: 0;
+}
+.popover {
+    padding: 0.8rem 0.95rem;
+}
+.popover {
+    word-wrap: break-word;
+    background-clip: padding-box;
+    background-color: #fff;
+    border: 1px solid rgba(18,38,63,.2);
+    border-radius: 0.5rem;
+    display: block;
+    font-family: var(--bs-font-sans-serif);
+    font-size: .8125rem;
+    font-style: normal;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: normal;
+    line-break: auto;
+    line-height: 1.5;
+    max-width: 10rem;
+    position: absolute;
+    text-align: left;
+    text-align: start;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: none;
+    top: 0;
+    white-space: normal;
+    word-break: normal;
+    word-spacing: normal;
+    z-index: 1070;
+}
+#chart-tooltip .popover-arrow {
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%) translateX(-0.5rem);
+}
+.bs-popover-auto[data-popper-placement^=top]>.popover-arrow, .bs-popover-top>.popover-arrow {
+    bottom: calc(-0.5rem - 1px);
+}
+.popover .popover-arrow {
+    display: block;
+    height: 0.5rem;
+    position: absolute;
+    width: 1rem;
+}
+.translate-middle-x {
+    transform: translateX(-50%)!important;
+}
+    body{
+                overflow-x: hidden;
+            }
+body a{
+    text-decoration: none;
+}
+header{
+    background-color: #ee4d2d;
+    font-size: .825rem;
+    margin-bottom: 20px;
+}
+.menu1 ul li a {
+    color: white;
+}
+.menu1 .icons{
+    font-size: 23px;
+    margin-right: 10px;
+}
+.menu1 ul li a:hover {
+    color: rgb(178, 175, 175);
+}
+.vl {
+    border-left: 2px solid rgba(228, 230, 228, 0.728);
+    height: 15px;
+    margin-top: 10px;
+}
+.menu2 {
+    margin-top: 10px;
+}
+.menu2 .small ul li a{
+    margin-top: -10px;
+    margin-left: 20px;
+}
+.menu2 .row .buy{
+    color: white;
+    font-size: 30px;
+    margin-left: 30px;
+}
+    footer .first .hd{
+    margin-left: 26px;
+    margin-top: 15px;
+    font-size: 18px;
+}
+.icon-shopee-logo{
+    margin-left: 40px;
+    fill: #fff;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    height: 50px;}
+footer p,a {
+    font-size: .770rem;
+    color:rgba(41, 39, 39, 0.623);
+}
+footer a:hover{
+    color:#ee4d2d;
+}
+footer .second {
+    height: 390px;
+    padding-top: 50px;
+}
+footer .third {
+    height: 70px;
+    margin-top: 20px;
+}
+footer hr:not([size]) {
+    width: 90%;
+    margin-top: 10px;
+    margin-left: 75px;
+    color:#bcb7b6a2;
+}
+footer .four .logo {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-left: 450px;
+}
+footer .four .logo .img-1{
+    margin-right: 30px;
+}
+footer .four .logo .img-2{
+    margin-right: 30px;
+}
+footer .copy-right{
+    font-size:xx-small;
+}
+line {
+    color: #ee4d2d;
+    fill: currentColor;
+    width: 1.3125rem;
+    height: 1.25rem;
+}
+.card {
+    border-color: #edf2f9;
+    box-shadow: 0 0.75rem 1.5rem rgb(18 38 63 / 3%);
+    margin-bottom: 1.5rem;
+}
+.card {
+    word-wrap: break-word;
+    background-clip: border-box;
+    background-color: #fff;
+    border: 1px solid #edf2f9;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    position: relative;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+.card-header:first-child {
+    border-radius: calc(0.5rem - 1px) calc(0.5rem - 1px) 0 0;
+}
+.card-header {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    padding-bottom: 0.75rem;
+    padding-top: 0.75rem;
+}
+.card>* {
+    flex-shrink: 0;
+}
+.card-header {
+    background-color: transparent;
+    border-bottom: 1px solid #edf2f9;
+    margin-bottom: 0;
+    padding: 1rem 1.5rem;
+}
+.card-header>:first-child {
+    flex: 1;
+}
+.card-header-title {
+    margin-bottom: 0;
+}
+.display-1, .display-2, .display-3, .display-4, .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    letter-spacing: -.02em;
+}
+.h4, .h5, .h6, h4, h5, h6 {
+    margin-bottom: 0.5625rem;
+}
+.h4, h4 {
+    font-size: .9375rem;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+    line-height: 1.1;
+    margin-bottom: 1.125rem;
+    margin-top: 0;
+}
+.text-muted {
+    --bs-text-opacity: 1;
+    color: #c17263!important;
+}
+.me-3 {
+    margin-right: 0.75rem!important;
+}
+div {
+    display: block;
+}
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(var(--bs-gutter-x)*-.5);
+    margin-right: calc(var(--bs-gutter-x)*-.5);
+    margin-top: calc(var(--bs-gutter-y)*-1);
+}
+._2jol0L {
+    display: grid;
+    grid-template-columns: 1fr 20.3125rem 11.875rem;
+    align-items: center;
+    box-sizing: border-box;
+    background: #fff;
+    width: 100%;
+    flex: 1;
+    font-size: 1rem;
+    position: relative;
+    margin-top: 0.75rem;
+}
+body a {
+  text-decoration: none;
+}
+.card>* {
+    flex-shrink: 0;
+}
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.5rem;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+.card {
+    word-wrap: break-word;
+    background-clip: border-box;
+    background-color: #fff;
+    border: 1px solid #edf2f9;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    position: relative;
+}
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(var(--bs-gutter-x)*-.5);
+    margin-right: calc(var(--bs-gutter-x)*-.5);
+    margin-top: calc(var(--bs-gutter-y)*-1);
+}
+.align-items-center {
+    align-items: center!important;
+}
+
+.chart {
+    height: 300px;
+    position: relative;
+}
+#chart-tooltip {
+    z-index: 0;
+}
+.popover {
+    padding: 0.8rem 0.95rem;
+}
+.card-header-tabs {
+    margin: -0.75rem 0;
+}
+.nav-tabs-sm {
+    font-size: .8125rem;
+}
+.card-header-tabs {
+    border-bottom: 0;
+    margin-bottom: -1rem;
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+}
+.nav-tabs {
+    border-bottom: 1px solid #e3ebf6;
+}
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+ol, ul {
+    padding-left: 2.5rem;
+}
+dl, ol, ul {
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+ol, ul {
+    padding-left: 2rem;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+.nav-tabs .nav-item:first-child {
+    margin-left: 0;
+}
+.nav-tabs-sm .nav-item {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+.nav-tabs .nav-item {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.nav-tabs-sm {
+    font-size: .8125rem;
+}
+.card-header-tabs .nav-link.active {
+    border-bottom-color: #ee4d2d;
+}
+.card-header-tabs .nav-link.active {
+    background-color: #fff;
+    border-bottom-color: #fff;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    background-color: transparent;
+    border-color: transparent transparent #ee4d2d;
+    color: #78200f;
+}
+.card-header-tabs .nav-link {
+    padding-bottom: calc(30px - 0.75em)!important;
+    padding-top: calc(30px - 0.75em)!important;
+}
+.nav-tabs-sm .nav-link {
+    padding-bottom: 1.15385rem;
+    padding-top: 1.15385rem;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+li {
+    text-align: -webkit-match-parent;
+}
+.nav-tabs-sm {
+    font-size: .8125rem;
+}
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+ul {
+    list-style-type: disc;
+}
+.nav-tabs .nav-item:last-child {
+    margin-right: 0;
+}
+.nav-tabs-sm .nav-item {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+.nav-tabs .nav-item {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.nav-tabs .nav-link:not(.active) {
+    color: #c17263;
+}
+.card-header-tabs .nav-link {
+    padding-bottom: calc(30px - 0.75em)!important;
+    padding-top: calc(30px - 0.75em)!important;
+}
+.nav-tabs-sm .nav-link {
+    padding-bottom: 1.15385rem;
+    padding-top: 1.15385rem;
+}
+.nav-tabs .nav-link {
+    border-bottom: 1px solid transparent;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    padding: 1rem 0;
+}
+.nav-tabs .nav-link {
+    background: none;
+    border: 1px solid transparent;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-bottom: -1px;
+}
+.nav-link {
+    color: #ee4d2d;
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+a, a:hover {
+    text-decoration: none;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.popover {
+    word-wrap: break-word;
+    background-clip: padding-box;
+    background-color: #fff;
+    border: 1px solid rgba(18,38,63,.2);
+    border-radius: 0.5rem;
+    display: block;
+    font-family: var(--bs-font-sans-serif);
+    font-size: .8125rem;
+    font-style: normal;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: normal;
+    line-break: auto;
+    line-height: 1.5;
+    max-width: 10rem;
+    position: absolute;
+    text-align: left;
+    text-align: start;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: none;
+    top: 0;
+    white-space: normal;
+    word-break: normal;
+    word-spacing: normal;
+    z-index: 1070;
+}
+.g-0, .gx-0 {
+    --bs-gutter-x: 0;
+}
+.col {
+    flex: 1 0 0%;
+}
+/* .row>* {
+    flex-shrink: 0;
+    margin-top: var(--bs-gutter-y);
+    max-width: 100%;
+    padding-left: calc(var(--bs-gutter-x)*.5);
+    padding-right: calc(var(--bs-gutter-x)*.5);
+    width: 100%;
+} */
+*, :after, :before {
+    box-sizing: border-box;
+}
+.col-auto {
+    flex: 0 0 auto;
+    width: auto;
+}
+
+.fe {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: Feather!important;
+    font-style: normal;
+    font-variant: normal;
+    line-height: inherit;
+    text-transform: none;
+}
+.fe, [data-dz-size] strong {
+    font-weight: 400;
+}
+.display-1, .display-2, .display-3, .display-4, .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    letter-spacing: -.02em;
+}
+.h2, h2 {
+    margin-bottom: 1.125rem;
+}
+.text-muted {
+    --bs-text-opacity: 1;
+    color: #c17263!important;
+}
+.mb-0 {
+    margin-bottom: 0!important;
+}
+.h2, h2 {
+    font-size: 1.25rem;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+    line-height: 1.1;
+    margin-bottom: 1.125rem;
+    margin-top: 0;
+}
+.chart {
+    height: 300px;
+    position: relative;
+}
+</style>
+<script>
+  document.querySelector("body > div.main-content > div.container-fluid > div:nth-child(1) > div:nth-child(1) > div")
+</script>
+<script>
+  document.querySelector("body > div.main-content > div.container-fluid > div:nth-child(2) > div.col-12.col-xl-8 > div > div.card-body > div")
+</script>
+<script>
+  var xValues = [0,10,20,30,40,50,60,70,80,90,100];
+  var yValues = [2,3,4,4,6,7,8,7,9,10,12];
+  
+  new Chart("myChart1", {
+    type: "line",
+    data: {
+      labels: xValues,
+      datasets: [{
+        fill: false,
+        lineTension: 0,
+        backgroundColor: "#ee4d2d",
+        borderColor: "#f08e7a8a",
+        data: yValues
+      }]
+    },
+    options: {
+      legend: {display: false},
+      scales: {
+        yAxes: [{ticks: {min: 1, max:12}}],
+      }
+    }
+  });
+  </script>
+<script>
+var xValues = ["Direct", "Organic", "Referral"];
+var yValues = [60,15,25];
+var barColors = [
+  "#ee4d2d",
+  "#c172638a",
+  "#be8c834a",
+];
+
+new Chart("myChart2", {
+  type: "doughnut",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+    }
+  }
+});
+</script>
+    </html>

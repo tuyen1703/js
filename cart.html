@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="css/style-1.css"> -->
+  <script src="CSS/style.css"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous"src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v7.0"></script>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <title>Giỏ hàng</title>
+</head>
+<style>
+    body, html {
+    font-family: Helvetica Neue,Helvetica,Arial,文泉驛正黑,WenQuanYi Zen Hei,Hiragino Sans GB,儷黑 Pro,LiHei Pro,Heiti TC,微軟正黑體,Microsoft JhengHei UI,Microsoft JhengHei,sans-serif;
+    color: rgba(0,0,0,.8);
+    line-height: 1.2;
+}
+body {
+    font-size: .875rem;
+    text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+}
+.stardust-checkbox {
+    font-family: -apple-system,HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Roboto,Droid Sans,Arial,sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    cursor: default;
+    position: relative;
+    color: rgba(0,0,0,.54);
+    max-width: 400px;
+}
+user agent stylesheet
+label {
+    cursor: default;
+}
+._1nrPtQ {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 5%);
+    border-radius: 0.125rem;
+    overflow: hidden;
+    border-radius: 3px;
+    height: 55px;
+    font-size: 14px;
+    background: #fff;
+    text-transform: capitalize;
+    margin-bottom: 12px;
+    color: #888;
+    padding: 0 20px;
+}
+._1nft6V {
+    display: flex;
+    flex-direction: column;
+    color: rgba(0,0,0,.8);
+    padding-top: 20px;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+._1m76cP {
+    color: #00bfa5;
+    stroke: currentColor;
+    fill: currentColor;
+    width: 1.25rem;
+    height: 0.9375rem;
+}
+.shopee-svg-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+    position: relative;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+._1nft6V {
+    display: flex;
+    flex-direction: column;
+    color: rgba(0,0,0,.8);
+    padding-top: 20px;
+}
+._2gJN5P .icon-voucher-applied-line, ._2gJN5P .icon-voucher-line {
+    color: #ee4d2d;
+    fill: currentColor;
+    width: 1.3125rem;
+    height: 1.25rem;
+}
+._2VzSPd .stardust-checkbox--disabled {
+    opacity: 1;
+}
+.stardust-checkbox--disabled {
+    opacity: .35;
+    cursor: no-drop;
+}
+.aWYRrb ._1hOsmP, .aWYRrb ._1nDYM0, .aWYRrb ._2VzSPd {
+    opacity: .2;
+}
+._1nDYM0 {
+    width: 18px;
+    height: 18px;
+    flex: 0 0 auto;
+    fill: none;
+}
+.DOOM4N {
+    font-size: 14px;
+    box-sizing: border-box;
+}
+._2jol0L {
+    display: grid;
+    grid-template-columns: 1fr 20.3125rem 11.875rem;
+    align-items: center;
+    box-sizing: border-box;
+    background: #fff;
+    width: 100%;
+    flex: 1;
+    font-size: 1rem;
+    position: relative;
+    margin-top: 0.75rem;
+}
+body{
+    overflow-x: hidden;
+}
+body a{
+    text-decoration: none;
+}
+header{
+    background-color: #ee4d2d;
+    font-size: .825rem;
+    margin-bottom: 20px;
+}
+.menu1 ul li a {
+    color: white;
+}
+.menu1 .icons{
+    font-size: 23px;
+    margin-right: 10px;
+}
+.menu1 ul li a:hover {
+    color: rgb(178, 175, 175);
+}
+.vl {
+    border-left: 2px solid rgba(228, 230, 228, 0.728);
+    height: 15px;
+    margin-top: 10px;
+}
+.menu2 {
+    margin-top: 10px;
+}
+.menu2 .small ul li a{
+    margin-top: -10px;
+    margin-left: 20px;
+}
+.menu2 .row .buy{
+    color: white;
+    font-size: 30px;
+    margin-left: 30px;
+}
+.b .carousel-inner .carousel-item img{
+    width: 100%;
+    height: 450px;
+}
+content .row .img-a{
+    margin-bottom: 10px;
+}
+content .row {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.row .border a{
+    font-size: .875rem;
+    -webkit-text-size-adjust: none;
+    font-family: Helvetica Neue,Helvetica,Arial,文泉驛正黑,WenQuanYi Zen Hei,Hiragino Sans GB,儷黑 Pro,LiHei Pro,Heiti TC,微軟正黑體,Microsoft JhengHei UI,Microsoft JhengHei,sans-serif;
+    line-height: 1.2;
+    background-color: transparent;
+    color: inherit;
+    text-decoration: inherit;
+}
+.icon-shopee-logo{
+    margin-left: 40px;
+    fill: #fff;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    height: 50px;}
+.xZ4bbg {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    width: 1200px;
+    margin: 10px auto 0;
+    min-height: 108px;
+}
+.xZ4bbg a {
+    color: inherit;
+    text-decoration: inherit;
+}
+div {
+    display: block;
+}
+._2Ehn-F {
+    margin: 18px auto 8px;
+}
+.ybDQTz {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.dNmwQY {
+    height: 100%;
+    border-radius: 0;
+}
+.n-CE6j {
+    position: relative;
+}
+._5l6amx, .LLE7qG {
+    height: 100%;
+}
+.edy5hG {
+    opacity: 1;
+    transition: opacity .2s ease;
+}
+.KSe2W7 {
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-size: .8125rem;
+    line-height: .875rem;
+    max-width: 150px;
+    margin-bottom: 8px;
+    word-wrap: break-word;
+    overflow: hidden;
+    }
+.TF67TG {
+    color: #222;
+    letter-spacing: 0;
+    text-align: center;
+}
+.shopee-content .img-b{
+    margin-top: 20px;
+    margin-left: 55px;
+    margin-bottom: 20px;
+}
+.shopee-content{
+    background-color: rgba(231, 226, 226, 0.963);
+}
+.shopee-content .hd{
+    height: 30px;
+    margin-right: 15px;
+    margin-left: 15px;
+    background-color: #fff;
+}
+.img-s {
+transition: transform .2s;
+    width: 150px;
+    height: 180px;
+    margin: 0 auto;
+  }
+  /*Hiệu ứng zoom*/
+  .img-s:hover {
+    transform: scale(1.2);
+  }
+.shopee-fl{
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.search-hot hr:not([size]) {
+    height: 5px;
+    width: 50px;
+    margin-top: 60px;
+    margin-left: -15px;
+    color:#ee4d2d;
+}
+.card{
+    text-align: center;
+    border: none;
+    margin-top: -10px;
+    height: 100%;
+    width: 100%;
+}
+.shopee-content .card img{
+    margin: auto;
+    width: 90px;
+    height: 90px;
+}
+.shopee-content .card .card-body .card-text{
+    font-size: .875rem;
+    text-decoration: none;
+    color: #222;
+}
+.card .card-body .card-text:hover {
+    color:#ee4d2d;
+}
+.sQ9tKt {
+    background-color: #fff;
+    margin-left: 50px;
+    fill:#fff;
+}
+.row .col .fl{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.shopee-mall .carousel-inner .carousel-item img{
+    width: 100%;
+    height: 350px;
+}
+.shopee-mall .row p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.shopee-mall .card img{
+    width:100px;
+    height: 102px;
+}
+.search-hot {
+    background-color: rgba(231, 226, 226, 0.295);
+    margin-top: 20px;
+}
+.search-hot .card .sr img {
+    width: 170px;
+    height: 170px ;
+}
+footer .first .hd{
+    margin-left: 26px;
+    margin-top: 15px;
+    font-size: 18px;
+}
+footer p,a {
+    font-size: .770rem;
+    color:rgba(41, 39, 39, 0.623);
+}
+footer a:hover{
+    color:#ee4d2d;
+}
+footer .second {
+    height: 390px;
+    padding-top: 50px;
+}
+footer .third {
+    height: 70px;
+    margin-top: 20px;
+}
+footer hr:not([size]) {
+    width: 90%;
+    margin-top: 10px;
+    margin-left: 75px;
+    color:#bcb7b6a2;
+}
+footer .four .logo {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-left: 450px;
+}
+footer .four .logo .img-1{
+    margin-right: 30px;
+}
+footer .four .logo .img-2{
+    margin-right: 30px;
+}
+footer .copy-right{
+    font-size:xx-small;
+}
+line {
+    color: #ee4d2d;
+    fill: currentColor;
+    width: 1.3125rem;
+    height: 1.25rem;
+}
+._2jol0L {
+    display: grid;
+    grid-template-columns: 1fr 20.3125rem 11.875rem;
+    align-items: center;
+    box-sizing: border-box;
+    background: #fff;
+    width: 100%;
+    flex: 1;
+    font-size: 1rem;
+    position: relative;
+    margin-top: 0.75rem;
+}
+body a {
+  text-decoration: none;
+}
+header{
+    background-color: #ee4d2d;
+    font-size: .825rem;
+    margin-bottom: 20px;
+}
+.menu1 ul li a {
+    color: white;
+}
+.menu1 .icons{
+    font-size: 23px;
+    margin-right: 10px;
+}
+.menu1 ul li a:hover {
+    color: rgb(178, 175, 175);
+}
+.vl {
+    border-left: 2px solid rgba(228, 230, 228, 0.728);
+    height: 15px;
+    margin-top: 10px;
+}
+.menu2 {
+    margin-top: 10px;
+}
+.menu2 .small ul li a{
+    margin-top: -10px;
+    margin-left: 20px;
+}
+.menu2 .row .buy{
+    color: white;
+    font-size: 30px;
+    margin-left: 30px;
+}
+</style>
+<body>
+    <header class="fixed-top">
+        <div style="height:40px;"class="menu1">
+            <div class="row">
+                <div class="col-md-7">
+              <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Kênh Người Bán</a>
+                </li>
+                <div class="vl"></div>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Trở thành Người bán Shopee</a>
+                </li>
+                <div class="vl"></div>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Tải ứng dụng</a>
+                </li>
+                <div class="vl"></div>
+                <li class="nav-item">
+                  <a class="nav-link disabled text-light">Kết nối</a>
+                </li>
+                <li><a class="bi bi-facebook icons" href="https://www.facebook.com/"></a></li>
+                <li><a class="bi bi-instagram icons" href="https://www.instagram.com/"></a></li>
+            </ul>
+            </div>
+            <div class="col-md-5">
+                <ul class="nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-bell"></i> Thông Báo</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><i class="bi bi-question-circle"></i> Hỗ Trợ</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><i class="bi bi-globe"></i> Tiếng Việt</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item text-dark" href="#">Tiếng Việt</a></li>
+                          <li><a class="dropdown-item text-dark" href="#">English</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="dangnhap.html">Đăng nhập</a>
+                      </li>
+                      <div class="vl"></div>
+                      <li class="nav-item">
+                        <a href="dangky.html" class="nav-link">Đăng ký</a>
+                      </li>
+                </ul>
+            </div>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                  <div style="margin-bottom: -30px;" class="title">
+                    <p style="font-size:25px; margin-left: 105px; margin-bottom: -10px;" class="text-center">Đăng nhập</p>
+                    <hr style="margin-left:105px;">
+                  </div>
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+            
+            </div>
+        </div>
+        <div style="height:100px;" class="logo">
+            <div style="background-color: white;" class="row">
+                <div class="col-2">
+                    <a href="index.html"><img src="images/logo-s.png"></a>
+                </div>
+                <div style="background-color: white;" class="col-1">
+                    <div style="height: 35px; margin-top: 28px; border-left: 1px solid #ee4d2d92;" class="vl"></div>
+                </div> 
+                <div style="background-color: white;" style="margin-left: -80px;" class="col">
+                    <h4 style="color:#ee4d2d; margin-top: 34px;font-family: Helvetica Neue,Helvetica,Arial,文泉驛正黑,WenQuanYi Zen Hei,Hiragino Sans GB,儷黑 Pro,LiHei Pro,Heiti TC,微軟正黑體,Microsoft JhengHei UI,Microsoft JhengHei,sans-serif;" class="text-start">Giỏ hàng</h4>
+                </div> 
+                <div style="background-color: white;" class="col">
+                    <div style="margin-top:25px; margin-left: -90px;" class="input-group flex-nowrap">
+                        <input style="border: 3px solid #ee4d2d;" type="text" class="form-control rounded-0" placeholder="15.7 MUA X3 ƯU ĐÃI" aria-label="15.7 MUA X3 ƯU ĐÃI" aria-describedby="addon-wrapping">
+                        <span style="width:70px; color: #fff;background-color: #ee4d2d; border: 1px solid #ee4d2d;" class="input-group-text rounded-0 justify-content-center" id="addon-wrapping"><i class="bi bi-search"></i></span>
+                    </div>
+                </div>        
+            </div>
+        </div>
+        <hr style="margin-top: -18px; color:#7b7a7a7b;">
+    </header>
+            <div id="cart" class="container-fluid" style="height: auto;margin-top: 5%; padding-top: 70px;">
+                <div class="row">
+                    <div class="col-8">
+                        <table class="table">
+                            <thead>
+                                <tr class="text-center">
+                                    <th>IMG</th>
+                                    <th>Tên</th>
+                                    <th>Đơn giá</th>
+                                    <th>Số lượng</th>
+                                    <th>Tổng</th>
+                                    <th>Xóa</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table show-cart-1">
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-4">
+                        <div class="thanhtoan">
+                            <div class="price">
+                                <div class="row" style=" padding-top: 50px;">
+                                    <div class="col-6">
+                                        <div class="price-text">Tạm tính</div>
+                                        
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <div class="mr-0">
+                                            <span class="total-cart total-1"></span>
+                                            <div class="d-inline">₫</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mt-4">
+                                        <div>Tổng tiền : </div>
+                                    </div>
+                                    <div class="col-6 mt-4 text-right">
+                                        <div class="mr-0">
+                                            <span class="total-cart total"></span>
+                                            <div class="d-inline total">₫</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-3 button">
+                                <button type="button" style="width:100%; margin-top: 20px; background-color: #ee4d2d;" class="btn btn-danger rounded-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    Tiến hành đặt hàng
+                                </button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" >
+                                    <div class="modal-dialog">
+                                        <div class="modal-content"style="height: 600px;">
+                                            <div class="modal-header " style="background-color:#ee4d2d; color: #fff;">
+                                                <h5 class="modal-title " id="staticBackdropLabel">THÔNG TIN ĐẶT HÀNG</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="form mb-3" >
+                                                <p style="font-size: 15px; margin-left: 20px; margin-top: -7px;margin-bottom: -2px;" >Họ tên người nhận hàng</p>
+                                                <input style="width: 90%; margin-left: 16px; height: 40px; margin-top:10px;" type="text" class="form-control rounded-0" value="Thảo Uyên" required>
+                                                </div>
+                                                <div class="form mb-3" >
+                                                    <p style="font-size: 15px; margin-left: 20px; margin-top: -7px;margin-bottom: -2px;" >Số điện thoại</p>
+                                                    <input style="width: 90%; margin-left: 16px; height: 40px; margin-top:10px;" type="text" class="form-control rounded-0" value="0332786303" required>
+                                                </div>
+                                        
+                                                <div class="row" style="padding-left: 0px;padding-right: 0px;">
+                                                    <div class="col-6">
+                                                        <p style="padding-left:22px;margin-bottom: -2px;">Tỉnh/thành</p>
+                                                        <select class="form-select" id="specificSizeSelect" style="width: 200px; margin-left: 17px; height: 45px; margin-top:10px;">
+                                                            <option selected>TT Huế</option>
+                                                            <option value="1">Hà Nội</option>
+                                                            <option value="2">Đà Nẵng</option>
+                                                            <option value="3">Hồ Chí Minh</option>
+                                                          </select>
+                                                        </div>
+                                                        <div class="col-6">
+                                                        <p style="padding-left:16px;margin-bottom: -2px;">Quận/huyện</p>
+                                                            <select class="form-select" id="specificSizeSelect" style="width: 180px; margin-left: 10px; height: 45px; margin-top:10px;">
+                                                                <option selected>TP. Huế</option>
+                                                                <option value="1">TX. Hương Trà</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form mb-3" >
+                                                        <p style="font-size: 15px; margin-left: 20px; margin-top: 10px;margin-bottom: -2px;" >Địa chỉ</p>
+                                                        <input style="width: 90%; margin-left: 16px; height: 40px; margin-top:10px;" type="text" class="form-control rounded-0" value="125 Vạn Xuân" required>
+                                                    </div>
+                                                                    
+                                                    <div class="form-check " style="margin-top:-2px">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"style="margin-left: -8px;">
+                                                        <label class="form-check-label" for="flexCheckDefault"><p  style="margin-left: 10px;">Lưu thông tin</p>
+                                                        </label>
+                                                    </div>
+                                                
+                                                    <div class="ghichu"style="padding-left:18px;padding-right: 28px;margin-bottom: -2px;">
+                                                        <h6 >Ghi chú</h6> 
+                                                        <div class="form" ><textarea class="form-control" placeholder="Thêm ghi chú cho shop" id="floatingTextarea"style="height:60px"></textarea></div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer" style="padding-right:45px">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Thoát</button>
+                                                    <a href="login.html"><button type="button" class="btn" style="background-color:#ee4d2d; color: #fff;" id="liveToastBtn" data-bs-dismiss="modal">Hoàn tất</button></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div style="padding-top: 20px;" class="mt-5 mb-5 text-center">
+                        <div class="container product">
+                          <div style="font-size: 35px;" class="h3 mb-5">Sản phẩm bán chạy</div>
+                            <hr style="width:20%; margin-left:400px; margin-top:-30px; height: 15px; color:rgb(185, 84, 40)">
+                          <div class="row" id="banchay">
+                        </div>
+                      </div>
+            </div>
+
+            <footer style="margin-top:20px;">
+                <div style="border-top: 2px solid #ee4d2d; margin:20px;padding-left: 20px; padding-right:20px; background-color: rgba(231, 226, 226, 0.295);" class="second">
+                <div class="row">
+                  <div class="col">
+                    <a class="text-muted" href="#"><strong>CHĂM SÓC KHÁCH HÀNG</strong></a><br>
+                      <a href="#">Trung Tâm Trợ Giúp</a><br>
+                      <a href="#">Shopee Blog</a><br>
+                      <a href="#">Shopee Mall </a><br>
+                      <a href="#">Hướng Dẫn Mua Hàng </a><br>
+                      <a href="#">Hướng Dẫn Bán Hàng</a><br>
+                      <a href="#">Thanh Toán</a><br>
+                      <a href="#">Shopee Xu</a><br>
+                      <a href="#">Vận Chuyển</a><br>
+                      <a href="#">Trả Hàng & Hoàn Tiền</a><br>
+                      <a href="#">Chăm Sóc Khách Hàng</a><br>
+                      <a href="#">Chính Sách bảo Hành </a>
+                  </div>
+                  <div class="col">
+                    <a class="text-muted" href="#"><strong>VỀ SHOPEE</strong></a><br>
+                    <a href="#">Giới Thiệu Về Shopee Việt Nam</a><br>
+                    <a href="#">Tuyển Dụng</a><br>
+                    <a href="#">Điều Khoản Shopee</a><br>
+                    <a href="#">Chính Sách Bảo Mật</a><br>
+                    <a href="#">Chính Hãng</a><br>
+                    <a href="#">Kênh Người Bán</a><br>
+                    <a href="#">Flash Sales</a><br>
+                    <a href="#">Chương Trình Tiếp Thị Liên Kết Shopee</a><br>
+                    <a href="#">Liên Hệ Với Truyền Thông</a><br>
+                </div>
+                  <div class="col">
+                    <a class="text-muted" href="#"><strong>THANH TOÁN</strong></a><br>
+                      <img style="width:80%; height: 100px;margin-left: -5px;" src="images\footer2.png">
+                    <br><a class="text-muted" href="#"><strong>ĐƠN VỊ VẬN CHUYỂN</strong></a><br>
+                    <img style="width:95%; height: 160px;margin-left: -10px;" src="images\footer1.png">
+                  </div>
+                  <div class="col">
+                    <a class="text-muted" href="#"><strong>THEO DÕI CHÚNG TÔI TRÊN</strong></a><br>
+                    <a href="#"><i class="bi bi-facebook"></i> Facebook</a><br>
+                    <a href="#"><i class="bi bi-instagram"></i> Instagram</a><br>
+                    <a href="#"><i class="bi bi-linkedin"></i> Linkedln</a><br>
+                  </div>
+                  <div class="col">
+                    <a class="text-muted" href="#"><strong>TẢI ỨNG DỤNG SHOPEE NGAY THÔI</strong></a><br>
+                    <div class="row">
+                      <div class="col-1">
+                        <img class="text-start" src="images/QR.png" width="80px" height="80px">
+                      </div>
+                      <div class="col text-end">
+                        <a href="#"><i class="bi bi-apple"></i> AppStore</a><br>
+                        <a href="#"><i class="bi bi-google"></i> GooglePlay</a><br>
+                        <a href="#"><i class="bi bi-app"></i> AppGallery</a><br>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="third">
+                <hr>
+                <div class="row">
+                  <div class="col-md-4">
+                    <p style="padding-left: 30px;">© 2022 Shopee. Tất cả các quyền được bảo lưu.
+                    </p>
+                  </div>
+                  <div class="col-md-8 text-center">
+                    <p>Quốc gia & Khu vực:
+                    <a href="#">Singapo </a>| 
+                    <a href="#">Indonesia </a>|
+                    <a href="#">Đài Loan </a>|
+                    <a href="#">Thái Lan </a>|
+                    <a href="#">Malaysia </a>|
+                    <a href="#">Việt Nam </a>|
+                    <a href="#">Philippines </a>|
+                    <a href="#">Brazil </a>|
+                    <a href="#">México </a>|
+                    <a href="#">Colombia </a>|
+                    <a href="#">Chile </a>|<br>
+                    <a href="#">Poland </a>|
+                    <a href="#">Spain </a>|
+                    <a href="#">Argentina </a>|
+                  </p>
+                  </div>
+                </div>
+              </div>
+              <div class="four">
+                <div class="header">
+                <ul class="nav justify-content-center">
+                  <li class="nav-item text-muted">
+                    <a class="nav-link active text-muted" aria-current="page" href="#">CHÍNH SÁCH BẢO MẬT</a>
+                  </li>
+                  <div class="vl"></div>
+                  <li class="nav-item">
+                    <a class="nav-link text-muted" href="#">QUY CHẾ HOẠT ĐỘNG</a>
+                  </li>
+                  <div class="vl"></div>
+                  <li class="nav-item">
+                    <a class="nav-link text-muted" href="#">CHÍNH SÁCH VẬN CHUYỂN</a>
+                  </li>
+                  <div class="vl"></div>
+                  <li class="nav-item">
+                    <a class="nav-link text-muted" href="#">CHÍNH SÁCH TRẢ HÀNG VÀ HOÀN TIỀN</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="logo">
+                <a href="#"><img class="img-1" src="images/logoCCDV.png" width="110px" height="50px" alt=""></a>
+                <a href="#"><img class="img-1" src="images/logoCCDV.png" width="110px" height="50px" alt=""></a>
+                <a href="#"><img src="images/logoCCDV.png" width="110px" height="50px" alt=""></a>
+              </div>
+              <p class="text-center">Công ty TNHH Shopee</p>
+              <div class="copy-right">
+                <p class="text-center">Địa chỉ: Tầng 4-5-6, Tòa nhà Capital Place, số 29 đường Liễu Giai, Phường Ngọc Khánh, Quận Ba Đình, Thành phố Hà Nội, Việt Nam. Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.shopee.vn<br>
+                  Chịu Trách Nhiệm Quản Lý Nội Dung: Nguyễn Đức Trí - Điện thoại liên hệ: 024 73081221 (ext 4678)
+                  <br>Mã số doanh nghiệp: 0106773786 do Sở Kế hoạch & Đầu tư TP Hà Nội cấp lần đầu ngày 10/02/2015
+                  <br>© 2015 - Bản quyền thuộc về Công ty TNHH Shopee</p>
+              </div>
+              </footer>
+    </body>
+    <script src="JS/giohang.js" language="Javascript"></script>
+    <script src="JS/product.js"></script>
+</html>
