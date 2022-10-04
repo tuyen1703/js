@@ -31,7 +31,7 @@ function validate1(){
             ((uu== data.username)&&(pu1==data.password)&&(data.role=="user"))){
             alert("Đăng nhập thành công!");
             k=i;
-            window.location.href= "http://127.0.0.1:5500/index.html";
+            window.location.href= "http://127.0.0.1:5500/blog.html";
             return true;
         }
         

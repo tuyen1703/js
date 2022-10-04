@@ -1,12 +1,12 @@
 var product = [
-    { id:"SP1", name:" Áo dài thêu hoạ tiết ", img:"./../img/s11.jpg", price:122000, },
-    { id:"SP2", name:" Áo dài truyền thống ", img:"./../img/s10.jpg", price:122000, },
-    { id:"SP3", name:" Áo dài ", img:"./../img/s1.webp", price:122000, },
-    { id:"SP4", name:" Áo dài hiện đại ", img:"./../img/s2.webp", price:122000, },
-   { id:"SP5", name:" Áo dài thêu hoa ", img:"./../img/s3.webp", price:122000, },
-   { id:"SP6", name:" Áo dài cổ trang ", img:"./../img/s5.jpg", price:122000, },
-   { id:"SP7", name:" Áo dài hồng ", img:"./../img/s6.jpg", price:122000, },
-   { id:"SP8", name:" Áo dài vàng ", img:"./../img/s7.webp", price:122000, },
+    { id:"SP1", name:" Combo dây buộc tóc ", img:"./../img/q1.jpg", price:15200, },
+    { id:"SP2", name:" Dép ếch xanh ", img:"./../img/q2.jpg", price:122000, },
+    { id:"SP3", name:" Bạch tuộc cảm xúc ", img:"./../img/q3.jpg", price:50000, },
+    { id:"SP4", name:" Iphone 13 promax ", img:"./../img/q4.jpg", price:33000000, },
+   { id:"SP5", name:" Heo buồn ngủ ", img:"./../img/q5.jpg", price:160000, },
+   { id:"SP6", name:" Sandal nhún trắng ", img:"./../img/q6.jpg", price:89000, },
+   { id:"SP7", name:" Súng bắn bong bóng ", img:"./../img/q7.jpg", price:68000, },
+   { id:"SP8", name:" Áo thun cotton ", img:"./../img/q8.jpg", price:72000, },
 ];
 var pro = [];
 
