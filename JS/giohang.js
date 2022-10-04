@@ -104,23 +104,44 @@ function displayCart() {
     for(var i in cartArray) {
       output += "<tr class='text-center'>"
         + "<td><img src='" + cartArray[i].img + "' style='width:50px'></td>" 
-        + "<td class='name-title'>" + cartArray[i].name + "</td>" 
-        + "<td>" + cartArray[i].price + "₫</td>"
-        + "<td><button class='minus-item cart-count input-group-addon btn btn-outline-primary' data-id='" + cartArray[i].id + "' data-name=" + cartArray[i].name + ">-</button>"
+        + "<td style='padding-top:30px;' class='name-title'>" + cartArray[i].name + "</td>" 
+        + "<td style='padding-top:30px;'>" + cartArray[i].price + "₫</td>"
+        + "<td><button style='margin-top:13px;' class='minus-item cart-count input-group-addon btn btn-outline-dark rounded-0' data-id='" + cartArray[i].id + "' data-name=" + cartArray[i].name + ">-</button>"
         +""
-        +  "<button class='btn cart-count'>" +cartArray[i].count+"</button>" 
-        + "<button class='plus-item cart-count btn btn-primary input-group-addon' data-id='" + cartArray[i].id + "' data-name=" + cartArray[i].name + ">+</button>"
+        +  "<button style='margin-top:13px;' class='btn btn-outline-dark rounded-0 cart-count'>" +cartArray[i].count+"</button>" 
+        + "<button style='margin-top:13px;' class='plus-item cart-count btn btn-outline-dark input-group-addon rounded-0' data-id='" + cartArray[i].id + "' data-name=" + cartArray[i].name + ">+</button>"
         +"</td>"
-        + "<td>" + cartArray[i].total+ "₫</td>"   
-        + "<td><button class='delete-item btn btn-outline-danger' data-id='" + cartArray[i].id + "' data-name=" + cartArray[i].name + ">X</button></td>"
+        + "<td style='padding-top:30px;'>" + cartArray[i].total+ "₫</td>"   
+        + "<td><button style='margin-top:13px;' class='delete-item btn btn-outline-danger' data-id='" + cartArray[i].id + "' data-name=" + cartArray[i].name + ">X</button></td>"
        
         +  "</tr>";
     }
-    $('.show-cart-1').html(output);
-    $('.total-cart').html(shoppingCart.totalCart());
+    $(".show-cart-1").html(output);
+  $(".total-cart").html(shoppingCart.totalCart());
+  $(".total-count").html(shoppingCart.totalCount());
    
   }
-
+  $(".show-cart-1").on("click", ".delete-item", function (event) {
+    var id = $(this).data("id");
+    shoppingCart.removeItemFromCartAll(id);
+    displayCart();
+  });
+  $(".show-cart-1").on("click", ".minus-item", function (event) {
+    var id = $(this).data("id");
+    shoppingCart.removeItemFromCart(id);
+    displayCart();
+  });
+  $(".show-cart-1").on("click", ".plus-item", function (event) {
+    var id = $(this).data("id");
+    shoppingCart.addItemToCart(id);
+    displayCart();
+  });
+  $(".show-cart-1").on("change", ".item-count", function (event) {
+    var id = $(this).data("id");
+    var count = Number($(this).val());
+    shoppingCart.setCountForItem(id, count);
+    displayCart();
+  });
   
 
 
@@ -128,7 +149,7 @@ function displayCart() {
     var id= $(this).data('id')
     shoppingCart.removeItemFromCartAll(id);
     displayCart();
-  })
+  });
 
   displayCart();
 
